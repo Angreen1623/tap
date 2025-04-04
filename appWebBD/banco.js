@@ -7,7 +7,7 @@ const seq = new Sequelize("exemplo", "root", "", {
 seq.authenticate().then(function(){
     console.log("Conectado com sucesso")
 }).catch(function(erro){
-    console.log("Falha ao se conectar: " + erro)    
+    console.log("Falha ao se conectar: " + erro)
 })
 
 const Agendamentos = seq.define("agendamentos", {
